@@ -51,7 +51,8 @@ will yield
 
 ## Test
 
-    $ ruby config.ru 
+    $ cd ~/src/heroku-rack
+    $ ./config.ru
     Run options: --seed 5477
 
     # Running tests:
