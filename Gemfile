@@ -1,7 +1,13 @@
 source 'http://rubygems.org'
 
 gem 'rack'
+
+group :development do
+
 gem 'foreman'
+gem 'heroku'
+
+end
 
 group :test do
 
