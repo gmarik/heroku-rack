@@ -1,16 +1,47 @@
 ## About
 
-minimal [heroku](http://heroku.com) [Rack](http://github.com) app
+Minimal [Heroku](http://heroku.com) [Rack](http://github.com) example app.
 
 
 ## Installation
 
 
-    git clone http://github.com/gmarik/heroku-rack ~/src/heroku-rack && cd ~/src/heroku-rack
-    bundle install
-    read -p 'enter your heroku app name: ' APP_NAME
-    heroku create $APP_NAME --stack cedar
-    git push heroku
+    $ git clone http://github.com/gmarik/heroku-rack ~/src/heroku-rack && cd ~/src/heroku-rack
+    $ bundle install
+
+
+## Test
+
+    $ cd ~/src/heroku-rack
+    $ ./config.ru
+    Run options: --seed 5477
+
+    # Running tests:
+
+    .
+
+    Finished tests in 0.022249s, 44.9458 tests/s, 89.8917 assertions/s.
+
+    1 tests, 2 assertions, 0 failures, 0 errors, 0 skips
+
+## Running locally
+
+    $ cd ~/src/heroku-rack
+    $ ./bin/foreman start
+
+spits
+
+    00:56:33 web.1     | started with pid 5876
+    00:56:34 web.1     | [2011-11-06 00:56:34] INFO  WEBrick 1.3.1
+    00:56:34 web.1     | [2011-11-06 00:56:34] INFO  ruby 1.9.2 (2011-07-09) [x86_64-darwin10.8.0]
+    00:56:34 web.1     | [2011-11-06 00:56:34] INFO  WEBrick::HTTPServer#start: pid=5877 port=5000
+
+## Running on Heroku
+
+    $ cd ~/src/heroku-rack
+    $ read -p 'enter your heroku app name: ' APP_NAME
+    $ heroku create $APP_NAME --stack cedar
+    $ git push heroku
 
 
 will spit something like this:
@@ -48,18 +79,4 @@ Then
 will yield
 
     Heroku Rack!
-
-## Test
-
-    $ cd ~/src/heroku-rack
-    $ ./config.ru
-    Run options: --seed 5477
-
-    # Running tests:
-
-    .
-
-    Finished tests in 0.022249s, 44.9458 tests/s, 89.8917 assertions/s.
-
-    1 tests, 2 assertions, 0 failures, 0 errors, 0 skips
 
