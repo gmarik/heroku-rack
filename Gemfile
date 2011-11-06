@@ -1,6 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rack'
+gem 'foreman'
 
 group :test do
 
