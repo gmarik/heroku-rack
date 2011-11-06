@@ -1,6 +1,6 @@
 ## About
 
-Minimal [Heroku](http://heroku.com) [Rack](http://github.com) example app.
+Minimal [Heroku](http://heroku.com) [Rack](http://github.com/rack) example app.
 
 
 ## Installation
