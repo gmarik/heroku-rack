@@ -39,3 +39,12 @@ will spit something like this:
 
     To git@heroku.com:heroku-rack.git
       14805d3..f3d619a  HEAD -> master
+
+
+Then
+
+    $ curl http://$APP_NAME.herokuapp.com
+
+will yield
+
+    Heroku Rack!
