@@ -48,3 +48,17 @@ Then
 will yield
 
     Heroku Rack!
+
+## Test
+
+    $ ruby config.ru 
+    Run options: --seed 5477
+
+    # Running tests:
+
+    .
+
+    Finished tests in 0.022249s, 44.9458 tests/s, 89.8917 assertions/s.
+
+    1 tests, 2 assertions, 0 failures, 0 errors, 0 skips
+
